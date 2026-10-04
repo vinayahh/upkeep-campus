@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>UPKEEP — Campus Maintenance & Issue Management Platform</title>
+  <meta name="description" content="Report. Resolve. Improve. Clean, modern, SaaS-grade campus facilities platform for students, maintenance staff, and administration." />
+
+  <!-- Fonts & Stylesheet -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Main SPA Root Container -->
+  <div id="appRoot"></div>
+
+  <!-- Toast Notification Container -->
+  <div id="toastContainer" class="toast-container"></div>
+
+  <!-- Duplicate Issue Warning Modal -->
+  <div id="duplicateModal" class="modal-backdrop">
+    <div class="modal-dialog">
+      <div class="modal-body" id="duplicateModalContent"></div>
+    </div>
+  </div>
+
+  <!-- Staff Assignment Drawer Modal -->
+  <div id="assignStaffModal" class="modal-backdrop">
+    <div class="modal-dialog">
+      <div class="modal-body" id="assignStaffModalContent"></div>
+    </div>
+  </div>
+
+  <!-- Notification Drawer Modal -->
+  <div id="notificationModal" class="modal-backdrop">
+    <div class="modal-dialog">
+      <div class="modal-body" id="notificationModalContent"></div>
+    </div>
+  </div>
+
+  <!-- Core Scripts -->
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
